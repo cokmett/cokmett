@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>The Cokmett Declaration Generator</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background: #111;
+        font-family: sans-serif;
+        color: #DDD;
+        font-weight: bold;
+        overflow: hidden;
+      }
+
+      .word {
+        position: absolute;
+        transform-origin: left center;
+        transform: rotate(-45deg);
+        -moz-transform-origin: left center;
+        -moz-transform: rotate(-45deg);
+        -webkit-transform-origin: left center;
+        -webkit-transform: rotate(-45deg);
+        white-space: nowrap;
+	z-index: 1;
+	font-family: monospace;
+      }
+ 
+      #the-kmett, #kmett-mask {
+        position: absolute;
+        margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+      }
+
+      #the-kmett {
+        z-index: 0;
+      }
+
+      #kmett-mask {
+        z-index: 3;
+        cursor: pointer;
+      }
+
+      #mask {
+        z-index: 2;
+	background-color: #111;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 50%;
+	top: 0;
+      }
+
+      .groupie-phrase {
+        position: absolute;
+        z-index: 4;
+        font-weight: bold;
+        font-family: "Comic Sans MS", sans-serif;
+      }
+    </style>
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="kmett.js"></script>
+    <div id="mask"></div>
+    <img id="the-kmett" src="kmett.png" />  
+    <img id="kmett-mask" src="kmett_mask.png" />  
+</body>
+</html>
